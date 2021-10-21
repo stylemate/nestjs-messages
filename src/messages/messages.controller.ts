@@ -13,7 +13,7 @@ export class MessagesController {
     }
 
     @Get('/:id')
-    getMessage(@Param('id') id: FunctionStringCallback) {
+    getMessage(@Param('id') id: string) {
         console.log(id);
         return id;
     }
