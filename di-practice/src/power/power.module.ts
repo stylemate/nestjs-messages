@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { PowerService } from './power.service';
 
 @Module({
-  providers: [PowerService]
+    providers: [PowerService],
+    exports: [PowerService] //makes this service avaliable to other modules
 })
 export class PowerModule {}
